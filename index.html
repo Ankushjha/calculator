@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- fontAwesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Basic Calculator Using JQuery</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Header section  -->
+      <section class="calculator-box">
+        <header class="calculator-header">
+          <!-- This is the left side of header section  -->
+          <div class="left">
+            <p class=""><small class="bold">Calculator</small></p>
+          </div>
+
+          <!-- this is the right side of the header section -->
+          <div class="right">
+            <div class="menu-collapse">
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <div class="menu-expand">
+              <i class="fa-regular fa-square"></i>
+            </div>
+            <div class="menu-cut">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </header>
+        <!-- menu section  -->
+        <section class="calculator-menu">
+          <!-- This is the left side of the menu section consists of hamburger menu, text and window sizable icon  -->
+          <div class="menu-left">
+            <div class="ham">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu-text">
+              <h3>Standard</h3>
+            </div>
+            <div class="menu-window">
+              <i class="fa-solid fa-window-restore"></i>
+            </div>
+          </div>
+
+          <!-- this is the right side of the menu consists of history icons that consists the whole history which we've used in calculator to calculate numbers  -->
+          <div class="menu-right">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+        </section>
+        <!-- result section  -->
+        <section class="input-result">
+          <!-- this is the screen where we see the result and type our query to get calculated using buttons  -->
+          <div class="input-screen" id="input-screen">0</div>
+        </section>
+
+        <!-- control buttons  -->
+        <!-- control button section consists of all buttons that are used to calculate our math  -->
+        <section class="calculator-control-buttons">
+          <!-- 1st row  -->
+          <div class="calculator-control-row control-row-one">
+            <div class="button module" id="module">%</div>
+            <div class="button" id="clear">C</div>
+            <div class="button" id="back"><i class="fa-solid fa-delete-left"></i></div>
+          </div>
+          <!-- 2nd row  -->
+          <div class="calculator-control-row control-row-two">
+            <div class="button number" id="btn-7">7</div>
+            <div class="button number" id="btn-8">8</div>
+            <div class="button number" id="btn-9">9</div>
+            <div class="button divide" id="divide">/</div>
+          </div>
+
+          <!-- 3rd row  -->
+          <div class="calculator-control-row control-row-three">
+            <div class="button number" id="btn-4">4</div>
+            <div class="button number" id="btn-5">5</div>
+            <div class="button number" id="btn-6">6</div>
+            <div class="button multiply" id="multiply">*</div>
+          </div>
+
+          <!-- 4th row  -->
+          <div class="calculator-control-row control-row-four">
+            <div class="button number" id="btn-1">1</div>
+            <div class="button number" id="btn-2">2</div>
+            <div class="button number" id="btn-3">3</div>
+            <div class="button" id="minus">-</div>
+          </div>
+
+          <!-- 5th row  -->
+          <div class="calculator-control-row control-row-five">
+            <div class="button number" id="decimal">.</div>
+            <div class="button number" id="btn-0">0</div>
+            <div class="button" id="equal">=</div>
+            <div class="button" id="add">+</div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- ********JavaScript ********* -->
+
+    <script src="./plugin/JQuery/jquery-3.6.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

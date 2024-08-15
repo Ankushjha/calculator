@@ -1,0 +1,150 @@
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #15addb;
+  font-family: roboto;
+}
+
+/* used height in container to set alignment in Y coordinate so that container will be in totally center from both x and y coordinate */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-box {
+  height: 80vh;
+  width: 25vw;
+  background-color: #e6e6e6;
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.calculator-header .right {
+  display: flex;
+}
+
+.calculator-header .right div {
+  padding: 7px 19px;
+  font-size: 14px;
+}
+
+.calculator-header .right .menu-collapse:hover {
+  background-color: #c7c7c7;
+}
+
+.calculator-header .right .menu-expand:hover {
+  background-color: #c7c7c7;
+}
+
+.calculator-header .right .menu-cut {
+  color: gray;
+}
+
+.calculator-header .right .menu-cut:hover {
+  color: white;
+  background-color: #fd1212;
+}
+
+.calculator-header .right .menu-cut i {
+  font-size: 18px;
+}
+
+.calculator-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-menu .menu-left {
+  display: flex;
+  align-items: center;
+}
+
+.calculator-menu .menu-left .ham {
+  padding: 10px 13px;
+}
+
+.calculator-menu .menu-left .ham:hover {
+  background-color: #c7c7c7;
+}
+
+.calculator-menu .menu-left .menu-text {
+  padding: 0 5px;
+}
+
+.calculator-menu .menu-left .menu-window {
+  padding: 10px 13px;
+}
+
+.calculator-menu .menu-left .menu-window:hover {
+  background-color: #c7c7c7;
+}
+
+.calculator-menu .menu-right {
+  padding: 10px 13px;
+}
+
+.calculator-menu .menu-right:hover {
+  background-color: #c7c7c7;
+}
+
+.input-result {
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.input-result .input-screen {
+  width: 100%;
+  font-size: 45px;
+  direction: rtl;
+  padding: 10px 13px;
+}
+
+.calculator-control-buttons {
+  width: 99%;
+  margin: auto;
+}
+
+.calculator-control-row {
+  display: flex;
+}
+
+.calculator-control-row div {
+  display: flex;
+  background-color: #dadada;
+  margin: 1px;
+  justify-content: center;
+  width: calc(100% / 4);
+  padding: 25px;
+}
+
+.calculator-control-row .number {
+  background-color: #fff;
+}
+
+.control-row-one #back {
+    width: 51%;
+}
+
+.calculator-control-row div:hover {
+  background-color: #d1d1d1;
+  box-shadow: 2px 2px 7px 5px #81818185;
+}
